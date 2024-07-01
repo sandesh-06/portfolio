@@ -1,0 +1,36 @@
+#moving-text h1{
+    display: inline-block;
+    margin: 0px 20px;
+    color: white;
+    /* background-color: brown; */
+}
+.dot{
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0.9vw 0;
+}
+.con{
+    /* background-color: rebeccapurple; */
+    white-space: nowrap;
+    display: inline-block;
+    animation-name: move-text;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+#moving-text{
+    white-space: nowrap;
+    overflow-x: auto;
+}
+#moving-text::-webkit-scrollbar{
+    display: none;
+}
+
+@keyframes move-text{
+    from{
+        transform: translate(0);
+    }
+    to{
+        transform: translate(-100%);
+    }
+}
