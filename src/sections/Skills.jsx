@@ -17,7 +17,7 @@ const Skills = () => {
     <section id="skills" className="flex flex-col lg:flex-row px-4 py-24 min-h-[99vh]">
       {/* Text */}
       <div className="w-full lg:w-1/3 flex flex-col justify-center items-center text-white">
-        <p className="text-white text-center text-4xl py-2 font-jost tracking-widest opacity-95 z-0">
+        <p className="text-neutral-800 dark:text-white text-center text-4xl py-2 font-jost tracking-widest opacity-95 z-0">
           SKILLS
         </p>
        <TitleUnderline />

@@ -42,7 +42,7 @@ function SkillProgress({ skill = {} }) {
         // style={{ position: "relative" }}
       >
         <svg
-          className="transform -rotate-90 w-48 h-48 sm:w-52 sm:h-52 md:w-58 md:h-58 lg:w-[15.5rem] lg:h-[15.5rem]"
+          className="transform -rotate-90 w-40 h-40 sm:w-52 sm:h-52 md:w-58 md:h-58 lg:w-[15.5rem] lg:h-[15.5rem]"
           viewBox="0 0 290 290"
           preserveAspectRatio="xMidYMid meet"
         >
@@ -84,7 +84,7 @@ function SkillProgress({ skill = {} }) {
           />
         </svg>
         <motion.span
-          className="absolute text-2xl sm:text-3xl md:text-5xl"
+          className="absolute text-2xl sm:text-3xl md:text-5xl text-neutral-800 dark:text-white"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 2, ease: "easeInOut" }}
@@ -93,7 +93,7 @@ function SkillProgress({ skill = {} }) {
         </motion.span>
       </div>
 
-      <div className="text-slate-100 mt-2 text-lg sm:text-2xl xl:text-4xl">
+      <div className="text-neutral-800 dark:text-slate-100 mt-2 text-lg sm:text-2xl xl:text-4xl">
         <p>{skill.title}</p>
       </div>
     </div>

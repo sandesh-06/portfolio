@@ -3,7 +3,7 @@ import "./Socials.css";
 
 const Socials = () => {
   return (
-    <div className="icons">
+    <div className="hidden sm:flex icons">
       <div className="social flex items-center justify-center">
         <a href="https://www.facebook.com/profile.php?id=100009558465904" target="_blank">
           <i className="social-icon fab fa-facebook-f"></i>

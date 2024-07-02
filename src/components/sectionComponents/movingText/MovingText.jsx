@@ -9,7 +9,7 @@ const MovingText = () => {
       <div key={index} className="con flex">
         {words.map((word, i) => (
           <div key={i} className="flex items-center">
-            <h1 className="text-4xl md:text-[4vw]">{word}</h1>
+            <h1 className="text-4xl md:text-[4vw] text-black dark:text-white">{word}</h1>
             <div className="dot bg-gradient-to-r from-cyan-800 to to-blue-800 w-[20px] h-[20px] lg:w-[30px] lg:h-[30px]"></div>
           </div>
         ))}

@@ -15,11 +15,11 @@ export function ContactForm() {
     console.log("Form submitted");
   };
   return (
-    <div className="max-w-md w-full mx-auto rounded-none md:rounded-2xl p-4 md:p-8 shadow-input ">
+    <div className="max-w-md bg-transparent w-full mx-auto rounded-none md:rounded-2xl p-4 md:p-8 shadow-input ">
       <h2 className="font-semibold font-jost text-xl md:text-4xl text-neutral-800 dark:text-neutral-200">
         Get in touch
       </h2>
-      <p className="text-sm md:text-lg max-w-sm mt-2 text-neutral-300">
+      <p className="text-sm md:text-lg max-w-sm mt-2 font-semibold dark:text-neutral-300">
       Let&apos;s collaborate to build more cool stuffs
       </p>
 

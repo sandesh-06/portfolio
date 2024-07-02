@@ -13,7 +13,9 @@ import {SpotLight} from "./ui/SpotLight"
 import TypewriteEffect from "./sectionComponents/home/TypewriteEffect";
 import { FlipwordsEffect } from "./sectionComponents/home/FlipwordsEffect";
 import { HoverGradient } from "./sectionComponents/home/HoverGradient";
-
+import ThemeButton from "./theme/ThemeButton";
+import { BorderEffect } from "./sectionComponents/home/BorderEffect";
+import { GridBackground } from "./sectionComponents/home/GridBackground";
 export {
     Header,
     Footer,
@@ -29,5 +31,8 @@ export {
     SpotLight,
     TypewriteEffect,
     FlipwordsEffect,
-    HoverGradient
+    HoverGradient,
+    ThemeButton,
+    BorderEffect,
+    GridBackground
 }
