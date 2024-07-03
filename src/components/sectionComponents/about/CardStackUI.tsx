@@ -49,7 +49,7 @@ const CARDS = [
     content: (
       <p>
        I've been off <Highlight>Instagram</Highlight> and <Highlight>Snapchat</Highlight>{" "} 
-       for the past year, and life has been great. Highly <Highlight>recommend</Highlight> it!
+       for the past year, and life has been great.
       </p>
     ),
   },
