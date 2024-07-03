@@ -52,7 +52,7 @@ const Header = () => {
         </div>
         
         {/* Socials */}
-        <div className="hover:cursor-pointer flex items-center gap-3">
+        <div className="hover:cursor-pointer hidden sm:flex items-center gap-3">
           {/* <ThemeButton /> */}
           <Socials />
         </div>
