@@ -20,16 +20,16 @@ const Skills = () => {
         <p className="text-neutral-800 dark:text-white text-center text-4xl py-2 font-jost tracking-widest opacity-95 z-0">
           SKILLS
         </p>
-       <TitleUnderline />
+       <TitleUnderline className="w-2/3"/>
        <div className="hidden lg:block">
-        <TextGenerate sentence="Eager to learn and grow through dynamic challenges and continuous improvement."/>
+        <TextGenerate sentence="Next, I have to learn three new skills so that the skill meter layout isn't compromised and also to enhance my portfolio of course."/>
        </div>
       </div>
 
       {/* Skills */}
       <div className="w-full lg:w-2/3 grid grid-cols-2 md:grid-cols-3 gap-2">
-        {skills.map((skill) => (
-          <SkillProgress skill={skill} />
+        {skills.map((skill, i) => (
+          <SkillProgress key={i} skill={skill} />
         ))}
       </div>
     </section>

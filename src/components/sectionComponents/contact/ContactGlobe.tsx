@@ -414,7 +414,7 @@ export function ContactGlobe() {
             Contact me, wherever you are
           </h2>
           <p className="text-center text-base md:text-lg text-neutral-700 dark:text-neutral-200 max-w-md mt-2 mx-auto font-semibold">
-           {themeMode === "light" ? "Turn on dark mode to see the stars" : "Have fun locating your county :)"}
+           {themeMode === "light" ? "Turn on dark mode to see the stars" : "Have fun locating your country :)"}
           </p>
         </motion.div>
         <div className="absolute w-full bottom-0 inset-x-0 h-40 bg-gradient-to-b pointer-events-none select-none from-transparent dark:to-[#070707] z-40" />

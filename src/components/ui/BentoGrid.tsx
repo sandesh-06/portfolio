@@ -1,8 +1,8 @@
 import React from "react";
 import { cn } from "../../utils/cn";
 import { useAnimate, stagger, motion } from "framer-motion";
+import { FaExternalLinkAlt } from "react-icons/fa";
 
-const staggerMenuItems = stagger(0.1, { startDelay: 0.15 });
 
 export const BentoGrid = ({
   className,
@@ -51,9 +51,10 @@ export const BentoGridItem = ({
         <a
           href={link}
           target={link ? "_blank" : "_self"}
-          className="hover:underline font-sans font-bold text-neutral-300 mb-2 mt-2 sm:text-xl"
+          className="hover:underline font-sans font-bold text-neutral-300 mb-2 mt-2 sm:text-xl flex gap-3 items-center"
         >
-          {title}
+          <span>{title}</span>
+          <span><FaExternalLinkAlt size={"15px"} /></span>
         </a>
         <div className="hidden sm:block font-sans font-normal text-neutral-500 text-[15px] ">
           {description}

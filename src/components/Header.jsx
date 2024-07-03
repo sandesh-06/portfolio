@@ -27,7 +27,7 @@ const Header = () => {
 
   return (
     <header className="font-nunito fixed top-0 left-0 w-full z-[100]">
-      <div className="bg-slate-50 dark:bg-black flex justify-between items-center h-16 px-3 md:px-5 relative shadow-lg border border-t-0 border-l-0 border-r-0 border-gray-700">
+      <div className="bg-slate-50 dark:bg-black flex justify-between items-center h-16 px-3 md:px-5 relative shadow-lg border border-t-0 border-l-0 border-r-0 border-gray-900">
         {/* Logo */}
         <div className="hover:cursor-pointer w-fit">
           <p className="text-start w-fit">
@@ -43,7 +43,7 @@ const Header = () => {
             {navItems.map((item) => (
               <li
                 key={item.text}
-                className="h-full flex items-center px-4 text-lg text-neutral-800 dark:text-neutral-100 font-bold"
+                className="h-full flex items-center px-4 text-lg text-neutral-800 dark:text-neutral-100 font-normal opacity-90"
               >
                 <a href={`#${item.path}`} className="cursor-pointer hover:opacity-65">{item.text}</a>
               </li>

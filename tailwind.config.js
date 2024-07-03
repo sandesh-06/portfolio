@@ -27,6 +27,8 @@ export default {
 
       animation: {
         spotlight: "spotlight 2s ease .75s 1 forwards",
+        'move-text-reverse': "move-text 12s linear infinite reverse",
+        'move-text': "move-text 20s linear infinite",
       },
       keyframes: {
         spotlight: {
@@ -38,6 +40,10 @@ export default {
             opacity: 1,
             transform: "translate(-50%,-40%) scale(1)",
           },
+        },
+        'move-text': {
+          '0%': { transform: 'translateX(0)' },
+          '100%': { transform: 'translateX(-100%)' },
         },
       },
     },

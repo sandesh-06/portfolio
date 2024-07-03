@@ -12,10 +12,7 @@
     /* background-color: rebeccapurple; */
     white-space: nowrap;
     display: inline-block;
-    animation-name: move-text;
-    animation-duration: 20s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
+
 }
 #moving-text{
     white-space: nowrap;
@@ -23,13 +20,4 @@
 }
 #moving-text::-webkit-scrollbar{
     display: none;
-}
-
-@keyframes move-text{
-    from{
-        transform: translate(0);
-    }
-    to{
-        transform: translate(-100%);
-    }
 }

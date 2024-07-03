@@ -16,6 +16,9 @@ import { HoverGradient } from "./sectionComponents/home/HoverGradient";
 import ThemeButton from "./theme/ThemeButton";
 import { BorderEffect } from "./sectionComponents/home/BorderEffect";
 import { GridBackground } from "./sectionComponents/home/GridBackground";
+import { CardStackUI } from "./sectionComponents/about/CardStackUI";
+import DetailsCard from "./sectionComponents/about/DetailsCard";
+
 export {
     Header,
     Footer,
@@ -34,5 +37,7 @@ export {
     HoverGradient,
     ThemeButton,
     BorderEffect,
-    GridBackground
+    GridBackground,
+    CardStackUI,
+    DetailsCard
 }

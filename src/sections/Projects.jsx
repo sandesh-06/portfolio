@@ -15,10 +15,10 @@ const Projects = () => {
         <p className="text-center text-4xl py-2 opacity-95 z-0 font-jost tracking-widest">
           PROJECTS
         </p>
-        <TitleUnderline />
+        <TitleUnderline className="w-2/3"/>
 
         <div className="hidden lg:block">
-          <TextGenerate sentence="Embarking on a journey of innovation and creativity through diverse projects." />
+          <TextGenerate sentence="Here are some of my no sleep projects which I enjoyed (sometimes) working." />
         </div>
       </div>
 
