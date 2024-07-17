@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import { Label } from "../../ui/Label";
 import { Input } from "../../ui/Input";
 import { cn } from "../../../utils/cn";
@@ -13,7 +13,8 @@ import emailjs from "emailjs-com"
 
 export function ContactForm() {
   const { register, handleSubmit, reset } = useForm();
-  
+  const [isLoading, setIsLoading] = useState(false);
+
   const formSubmit = (data: any) => {
     const templateParams = {
       name: data.name,
@@ -25,8 +26,10 @@ export function ContactForm() {
     emailjs.send('service_76dywfc', 'template_o0i6luv', templateParams, 'uj9HfyHqQZOoePPma')
       .then(
         (result) => {
+          setIsLoading(true);
           alert('Message sent successfully!');
           reset();  // reset the form after successful submission
+          setIsLoading(false);
         },
         (error) => {
           alert('Failed to send the message, please try again.');
@@ -80,8 +83,9 @@ export function ContactForm() {
         <button
           className="bg-gradient-to-br from-cyan-800 to-blue-800 relative group/btn  blockbg-zinc-800 w-full text-white rounded-md h-10 font-medium  shadow-[0px_1px_0px_0px_var(--zinc-800)_inset,0px_-1px_0px_0px_var(--zinc-800)_inset]"
           type="submit"
+          disabled={isLoading}
         >
-          Submit info &rarr;
+          {isLoading ? (<p className="brightness-50">Submitting..</p>) : (<p>Submit info &rarr;</p>)}
           <BottomGradient />
         </button>
 
