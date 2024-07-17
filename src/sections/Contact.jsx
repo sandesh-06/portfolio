@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
 import { ContactGlobe, ContactForm, SparklesBackground } from "../components";
-import { animate, useInView, motion } from "framer-motion";
+import { useInView } from "framer-motion";
 
 const Contact = () => {
   const ref = useRef(null);
@@ -30,7 +30,9 @@ const Contact = () => {
         <div className="flex flex-col lg:flex-row ">
           {/* Globe */}
           <div className="hidden md:flex lg:block w-full lg:w-1/2 items-center">
-            <ContactGlobe />
+            <div>
+              <ContactGlobe />
+            </div>
           </div>
 
           {/* Form */}

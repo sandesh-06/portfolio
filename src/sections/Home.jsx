@@ -57,7 +57,7 @@ const Home = () => {
           </div>
 
           {/* Image side */}
-          <div className="flex justify-center items-center md:w-1/2 px-1 py-">
+          <div className="flex justify-center items-center md:w-1/2 px-1 ">
             <motion.div
               className="w-[18rem] h-[18rem] sm:w-[22rem] sm:h-[22rem] lg:w-[30rem] lg:h-[30rem] xl:w-[35rem] xl:h-[35rem] rounded-full overflow-hidden shadow-2xl"
               initial={{ opacity: 0 }}
@@ -67,7 +67,7 @@ const Home = () => {
               <img
                 src="https://res.cloudinary.com/sandesh-06/image/upload/v1719939392/portfolio/admnpv6nu5jnvu6uxh7m.jpg"
                 alt=""
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover brightness-105"
               />
             </motion.div>
           </div>

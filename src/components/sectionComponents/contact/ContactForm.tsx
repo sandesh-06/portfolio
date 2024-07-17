@@ -8,41 +8,61 @@ import {
   IconBrandGoogle,
   IconBrandOnlyfans,
 } from "@tabler/icons-react";
+import { useForm } from "react-hook-form";
+import emailjs from "emailjs-com"
 
 export function ContactForm() {
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    console.log("Form submitted");
+  const { register, handleSubmit, reset } = useForm();
+  
+  const formSubmit = (data: any) => {
+    const templateParams = {
+      name: data.name,
+      place: data.place,
+      email: data.email,
+      message: data.message,
+    };
+
+    emailjs.send('service_76dywfc', 'template_o0i6luv', templateParams, 'uj9HfyHqQZOoePPma')
+      .then(
+        (result) => {
+          alert('Message sent successfully!');
+          reset();  // reset the form after successful submission
+        },
+        (error) => {
+          alert('Failed to send the message, please try again.');
+        }
+      );
   };
+
   return (
     <div className="max-w-md bg-transparent w-full mx-auto rounded-none md:rounded-2xl p-4 md:p-8 shadow-input ">
       <h2 className="font-semibold font-jost text-xl md:text-4xl text-neutral-800 dark:text-neutral-200">
         Get in touch
       </h2>
       <p className="text-sm md:text-lg max-w-sm mt-2 font-semibold dark:text-neutral-300">
-      Let&apos;s collaborate to build more cool stuffs
+        Let&apos;s collaborate to build more cool stuffs
       </p>
 
-      <form className="my-8" onSubmit={handleSubmit}>
+      <form className="my-8" onSubmit={handleSubmit(formSubmit)}>
         <div className="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-2 mb-4">
           <LabelInputContainer>
             <Label className="text-xl" htmlFor="firstname">
               Name
             </Label>
-            <Input  id="firstname" placeholder="Jackie Chan" type="text" />
+            <Input id="firstname" placeholder="Jackie Chan" type="text"  {...register("name", { required: true })}/>
           </LabelInputContainer>
           <LabelInputContainer>
             <Label className="text-xl" htmlFor="lastname">
               Country/City
             </Label>
-            <Input id="lastname" placeholder="India" type="text" />
+            <Input id="lastname" placeholder="China" type="text"  {...register("place", { required: true })}/>
           </LabelInputContainer>
         </div>
         <LabelInputContainer className="mb-4">
           <Label className="text-xl" htmlFor="email">
             Email Address
           </Label>
-          <Input id="email" placeholder="jacckie@mail.com" type="email" />
+          <Input id="email" placeholder="jacckie@mail.com" type="email"  {...register("email", { required: true })}/>
         </LabelInputContainer>
         <LabelInputContainer className="mb-4">
           <Label className="text-xl" htmlFor="password">
@@ -53,6 +73,7 @@ export function ContactForm() {
             placeholder="Your portfolio looks cool :)"
             type="text"
             className="h-24"
+            {...register("message", { required: true })}
           />
         </LabelInputContainer>
 
