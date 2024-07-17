@@ -16,6 +16,7 @@ export function ContactForm() {
   const [isLoading, setIsLoading] = useState(false);
 
   const formSubmit = (data: any) => {
+    setIsLoading(true);
     const templateParams = {
       name: data.name,
       place: data.place,
@@ -26,7 +27,6 @@ export function ContactForm() {
     emailjs.send('service_76dywfc', 'template_o0i6luv', templateParams, 'uj9HfyHqQZOoePPma')
       .then(
         (result) => {
-          setIsLoading(true);
           alert('Message sent successfully!');
           reset();  // reset the form after successful submission
           setIsLoading(false);
