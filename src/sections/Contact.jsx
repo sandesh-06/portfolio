@@ -29,7 +29,7 @@ const Contact = () => {
         </div>
         <div className="flex flex-col lg:flex-row ">
           {/* Globe */}
-          <div className="hidden md:flex lg:block w-full lg:w-1/2 items-center">
+          <div className="hidden md:block md:w-full lg:w-1/2 items-center">
             <div>
               <ContactGlobe />
             </div>
