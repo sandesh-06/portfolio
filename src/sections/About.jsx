@@ -16,7 +16,7 @@ const About = () => {
         <TitleUnderline className="w-2/3" />
 
         <div className="hidden lg:block px-4">
-          <TextGenerate sentence="As a full stack developer and curious undergrad, I love diving into new tech and coming up with solutions (even if they hurt my brain). My passion for learning drives me to code like a caffeinated squirrel—always on the hunt for the next big thing!" />
+          <TextGenerate sentence="Currently working as a Salesforce Developer at PwC, where I build smart solutions and occasionally talk to Apex like it's a teammate.My journey started at GUVI, my first job and the place where I not only learned but also mentored students in tech,translating complex code into something even 8th graders could enjoy (and sometimes debug better than me). I love sharing knowledge, solving problems, and making tech less scary for everyone.Fluent in five languages (and sarcasm), and always ready for a challenges especially if it comes with choosing a place for an outing.Forever curious, always learning, and yes... still breaking things just right to fix them better." />
         </div>
       </div>
 
@@ -25,7 +25,7 @@ const About = () => {
         animate={{ scale: inView ? 1 : 0 }}
         transition={{ duration: 3 }}
       >
-        <DetailsCard institution={"Sathyabama University"} marks={"CGPA: 9.19"} duration={"2021 - PRESENT"} degree={"Bachelors in Computer Science and Engineering"} location={"Chennai"}/>
+        <DetailsCard institution={"Sathyabama University"} marks={"CGPA: 9.19"} duration={"2021 - 2025"} degree={"Bachelors in Computer Science and Engineering"} location={"Chennai"}/>
         <DetailsCard institution={"Kola Saraswathi Vaishnav Sr. Sec. School"} marks={"PERCENTAGE: 90.4%"} duration={"2020 - 2021"} degree={"12th Standard"} location={"Chennai"}/>
         <CardStackUI className="py-16"/>
       </motion.div>

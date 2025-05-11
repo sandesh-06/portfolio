@@ -30,11 +30,11 @@ function App() {
         <div className="my-20">
           <MovingText
             location={true}
-            moveWords={["INDIA", "TAMIL NADU", "CHENNAI"]}
+            moveWords={["INDIA", "BENGALURU", "CHENNAI"]}
             animate="right"
           />
           <MovingText
-            moveWords={["FULL STACK DEVELOPER", "UNDERGRAD", "OPEN TO WORK"]}
+            moveWords={["FULL STACK DEVELOPER", "UNDERGRAD", "SALESFORCE DEV IN PwC"]}
           />
         </div>
         <Skills />

@@ -17,14 +17,14 @@ const Socials = ({hide=true}) => {
 
      {/* FB and LinkedIn */}
       <div className={`${hide ? "hidden sm:flex" : "flex"}`}>
-      <div className="social flex items-center justify-center">
+      {/* <div className="social flex items-center justify-center">
         <a
           href="https://www.facebook.com/profile.php?id=100009558465904"
           target="_blank"
         >
           <i className="social-icon fab fa-facebook-f"></i>
         </a>
-      </div>
+      </div> */}
 
       <div className="social ">
         <a href="https://www.linkedin.com/in/ss0603/" target="_blank">
